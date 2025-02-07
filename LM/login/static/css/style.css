@@ -1,0 +1,123 @@
+/* Zmiana stylu tła i wyśrodkowanie zawartości */
+body {
+    background: black;
+    margin: 0;
+    height: 100vh; /* Wysokość strony na 100% */
+    display: flex; /* Użycie Flexboxa */
+    flex-direction: column; /* Ułożenie elementów w kolumnie */
+    justify-content: center; /* Wyśrodkowanie elementów w pionie */
+    align-items: center; /* Wyśrodkowanie elementów w poziomie */
+    color: white;
+}
+
+/* Nagłówek */
+header {
+    text-align: center;
+    margin-bottom: 30px; /* Przestrzeń między nagłówkiem a formularzem */
+    font-size: 2rem; /* Zwiększenie czcionki nagłówka */
+    width: 100%; /* Nagłówek na całą szerokość */
+}
+
+/* Formularz logowania */
+form {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Tło formularza z lekką przezroczystością */
+    border-radius: 10px; /* Zaokrąglone rogi formularza */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Cień dla formularza */
+    width: 100%;
+    max-width: 400px; /* Maksymalna szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+    display: flex;
+    flex-direction: column; /* Ustawienie elementów formularza w kolumnie */
+    align-items: center; /* Wyśrodkowanie elementów formularza w poziomie */
+}
+
+/* Stylowanie dla pól input */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Wypełnia pełną szerokość formularza */
+    padding: 10px;
+    margin-bottom: 20px; /* Odstęp między polami */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    text-align: center; /* Wyśrodkowanie tekstu wpisywanego przez użytkownika */
+}
+
+/* Stylowanie placeholdera */
+input::placeholder {
+    text-align: center; /* Wyśrodkowanie tekstu placeholdera */
+}
+
+/* Stylowanie przycisku */
+button[type="submit"] {
+    background-color: #4CAF50; /* Zielony kolor przycisku */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* Przyciski o szerokości formularza */
+    font-size: 16px; /* Zwiększenie czcionki przycisku */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Ciemniejszy odcień zieleni po najechaniu */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.alert-error {
+    color: #f8d7da;
+    background-color: #721c24;
+    border-color: #f5c6cb;
+    width: 100px;
+
+}
+
+.alert-info {
+    color: #d1ecf1;
+    background-color: #0c5460;
+    border-color: #bee5eb;
+}
+
+.alert-success {
+    color: #d4edda;
+    background-color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-warning {
+    color: #fff3cd;
+    background-color: #856404;
+    border-color: #ffeeba;
+}
+
+.custom-alert {
+    width: 300px; /* Szerokość komunikatu */
+    margin: 0 auto; /* Wyśrodkowanie komunikatu */
+    font-size: 0.875rem; /* Zmniejszenie rozmiaru czcionki */
+    text-align: center;
+}
+
